@@ -5,20 +5,22 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "\"user\"")  // Escaping the table name
+@Table(name = "\"user\"")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String username;
     private int score;
+    private String gender;
 
     public User() {
     }
 
-    public User(String username, int score) {
+    public User(String username, int score,String gender) {
         this.username = username;
         this.score = score;
+        this.gender= gender;
     }
 
 

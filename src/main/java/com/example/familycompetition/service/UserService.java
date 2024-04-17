@@ -17,12 +17,14 @@ public class UserService {
 
 public void initializeUsers() {
     List<User> users = Arrays.asList(
-        new User("huda", 0),
-        new User("nader", 0),
-        new User("maher", 0),
-        new User("redha", 0),
-        new User("hajar", 0),
-        new User("hailah", 0)
+        new User("هدى", 0,"woman"),
+        new User("هاجر", 0,"woman"),
+        new User("هيلة", 0,"woman"),
+        new User("رضا", 0,"man"),
+        new User("ماهر", 0,"man"),
+        new User("رائد", 0,"man"),
+        new User("نادر", 0,"man"),
+        new User("ربيع", 0,"man")
     );
     userRepository.saveAll(users);
 }
